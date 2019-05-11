@@ -1,20 +1,34 @@
 PODS:
+  - Alamofire (4.8.1)
+  - Moya (12.0.1):
+    - Moya/Core (= 12.0.1)
+  - Moya/Core (12.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.0)
   - R.swift (5.0.2):
     - R.swift.Library (~> 5.0.0)
   - R.swift.Library (5.0.0)
+  - Result (4.1.0)
 
 DEPENDENCIES:
+  - Moya
   - R.swift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Moya
     - R.swift
     - R.swift.Library
+    - Result
 
 SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
   R.swift: 81455d81467763cbd3f4d79d938d05f4ac4c0228
   R.swift.Library: 0bf390e729bc10bb2c9e4fb78bd043164a7be4ff
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
 
-PODFILE CHECKSUM: 0d209b222c1515feee2d51a77ade239064885f63
+PODFILE CHECKSUM: 4f6ac91122de6be042aa7de681ddc3c4015731c9
 
 COCOAPODS: 1.6.1
