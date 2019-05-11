@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Moya
 
 class AppCoordinator: Coordinator {
 
@@ -15,16 +16,17 @@ class AppCoordinator: Coordinator {
 
     private let window: UIWindow
 
-    private let viewController: ViewController
+    private let viewController: ProgramListViewController
 
     init(_ window: UIWindow) {
         self.window = window
         children = []
-        viewController = R.storyboard.passScanner.instantiateInitialViewController()!
-        viewController.coordinatorDelegate = self
-    }
+        viewController = R.storyboard.program.instantiateInitialViewController()!
+        //viewController.coordinatorDelegate = self
+    } 
 
     func start() {
+        viewController.viewModel = ProgramViewModel(service: ProgramService(provider: MoyaProvider()))
         window.rootViewController = viewController
         window.makeKeyAndVisible()
     }
@@ -32,7 +34,7 @@ class AppCoordinator: Coordinator {
     func stop() {
     }
 }
-
+/*
 extension AppCoordinator: ViewControllerCoordinatorDelegate {
     func viewController(didStartScan: ViewController) {
         let scanner = ScannerViewController()
@@ -67,3 +69,4 @@ extension AppCoordinator: ScannerViewControllerDelegate {
         return errorAlert(message: error.localizedDescription)
     }
 }
+*/
