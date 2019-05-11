@@ -1,0 +1,6 @@
+framework module Pods_DLRG_sh {
+  umbrella header "Pods-DLRG.sh-umbrella.h"
+
+  export *
+  module * { export * }
+}
