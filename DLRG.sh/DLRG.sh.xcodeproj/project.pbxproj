@@ -448,10 +448,10 @@
 			baseConfigurationReference = 160488376F4E59FC20A34171 /* Pods-DLRG.sh.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = DLRG.sh/DLRG.sh.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Resources/DLRG.sh.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SQH36C5KAU;
-				INFOPLIST_FILE = DLRG.sh/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,10 +468,10 @@
 			baseConfigurationReference = 5B30089D393B0CC763FD7CC5 /* Pods-DLRG.sh.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = DLRG.sh/DLRG.sh.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Resources/DLRG.sh.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SQH36C5KAU;
-				INFOPLIST_FILE = DLRG.sh/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
