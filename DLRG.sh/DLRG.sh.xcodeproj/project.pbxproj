@@ -58,7 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				2965320822871F1500A11052 /* R.generated.swift */,
-				296531ED2286D90C00A11052 /* DLRG.sh */,
+				296531ED2286D90C00A11052 /* Sources */,
 				296531EC2286D90C00A11052 /* Products */,
 				A26D79605D335AB10103B5B7 /* Pods */,
 				70CD9D9D5815126AABBEE9E2 /* Frameworks */,
@@ -73,7 +73,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		296531ED2286D90C00A11052 /* DLRG.sh */ = {
+		296531ED2286D90C00A11052 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				296532122287356A00A11052 /* DLRG.sh.entitlements */,
@@ -82,7 +82,7 @@
 				296531F52286D90F00A11052 /* Assets.xcassets */,
 				296531FA2286D90F00A11052 /* Info.plist */,
 			);
-			path = DLRG.sh;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		2965320A228724F900A11052 /* PassScanner */ = {
