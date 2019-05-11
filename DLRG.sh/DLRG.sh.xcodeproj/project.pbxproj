@@ -121,11 +121,11 @@
 		2965320D2287265900A11052 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				296532232287561000A11052 /* Program */,
 				296531F72286D90F00A11052 /* LaunchScreen.storyboard */,
 				2965320422871D9F00A11052 /* Coordinator.swift */,
 				2965320222871D8000A11052 /* AppCoordinator.swift */,
 				2965320A228724F900A11052 /* PassScanner */,
+				296532232287561000A11052 /* Program */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
