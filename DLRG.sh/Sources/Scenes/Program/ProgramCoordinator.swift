@@ -8,19 +8,22 @@
 
 import Foundation
 import UIKit
-import Moya
 
 class ProgramCoordinator: Coordinator {
 
+    typealias Factory = ProgramFactory
+
     private let rootViewController: UINavigationController
 
-    init(rootViewController: UINavigationController) {
+    private let factory: Factory
+
+    init(rootViewController: UINavigationController, factory: Factory) {
         self.rootViewController = rootViewController
+        self.factory = factory
     }
 
     func start() {
-        let viewController = R.storyboard.program.instantiateInitialViewController()!
-        viewController.viewModel = ProgramViewModel(service: ProgramService(provider: MoyaProvider()))
+        let viewController = factory.makeProgramListViewController()
         rootViewController.setViewControllers([viewController], animated: true)
     }
 

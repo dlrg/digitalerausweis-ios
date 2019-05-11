@@ -27,6 +27,9 @@
 		2965323722875C2400A11052 /* ProgramListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2965323622875C2400A11052 /* ProgramListViewController.swift */; };
 		2965323922875F7400A11052 /* ProgramPointTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2965323822875F7400A11052 /* ProgramPointTableViewCell.swift */; };
 		2965323B2287718B00A11052 /* ProgramCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2965323A2287718B00A11052 /* ProgramCoordinator.swift */; };
+		2965323E228772C500A11052 /* ProgramFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2965323D228772C500A11052 /* ProgramFactory.swift */; };
+		29653240228772F800A11052 /* MoyaFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2965323F228772F800A11052 /* MoyaFactory.swift */; };
+		296532422287746B00A11052 /* AppFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296532412287746B00A11052 /* AppFactory.swift */; };
 		821FA86EC7D7039C2BBAF2BC /* Pods_DLRG_sh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A8BE4F9C27026A25FC211 /* Pods_DLRG_sh.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +58,9 @@
 		2965323622875C2400A11052 /* ProgramListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramListViewController.swift; sourceTree = "<group>"; };
 		2965323822875F7400A11052 /* ProgramPointTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramPointTableViewCell.swift; sourceTree = "<group>"; };
 		2965323A2287718B00A11052 /* ProgramCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramCoordinator.swift; sourceTree = "<group>"; };
+		2965323D228772C500A11052 /* ProgramFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramFactory.swift; sourceTree = "<group>"; };
+		2965323F228772F800A11052 /* MoyaFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaFactory.swift; sourceTree = "<group>"; };
+		296532412287746B00A11052 /* AppFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFactory.swift; sourceTree = "<group>"; };
 		5B30089D393B0CC763FD7CC5 /* Pods-DLRG.sh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLRG.sh.release.xcconfig"; path = "Target Support Files/Pods-DLRG.sh/Pods-DLRG.sh.release.xcconfig"; sourceTree = "<group>"; };
 		F84A8BE4F9C27026A25FC211 /* Pods_DLRG_sh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DLRG_sh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -95,6 +101,7 @@
 		296531ED2286D90C00A11052 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				2965323C228772B600A11052 /* Injectors */,
 				2965320D2287265900A11052 /* Scenes */,
 				296531EE2286D90C00A11052 /* AppDelegate.swift */,
 			);
@@ -196,6 +203,16 @@
 				2965323822875F7400A11052 /* ProgramPointTableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		2965323C228772B600A11052 /* Injectors */ = {
+			isa = PBXGroup;
+			children = (
+				2965323D228772C500A11052 /* ProgramFactory.swift */,
+				2965323F228772F800A11052 /* MoyaFactory.swift */,
+				296532412287746B00A11052 /* AppFactory.swift */,
+			);
+			path = Injectors;
 			sourceTree = "<group>";
 		};
 		70CD9D9D5815126AABBEE9E2 /* Frameworks */ = {
@@ -369,6 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				296532422287746B00A11052 /* AppFactory.swift in Sources */,
 				2965320322871D8000A11052 /* AppCoordinator.swift in Sources */,
 				296532302287579500A11052 /* ProgramEndpoint.swift in Sources */,
 				296531F12286D90C00A11052 /* ViewController.swift in Sources */,
@@ -380,10 +398,12 @@
 				296531EF2286D90C00A11052 /* AppDelegate.swift in Sources */,
 				2965320922871F1500A11052 /* R.generated.swift in Sources */,
 				2965322C228756C400A11052 /* ProgramPointViewModel.swift in Sources */,
+				29653240228772F800A11052 /* MoyaFactory.swift in Sources */,
 				296532262287569900A11052 /* ProgramPoint.swift in Sources */,
 				2965323722875C2400A11052 /* ProgramListViewController.swift in Sources */,
 				2965323B2287718B00A11052 /* ProgramCoordinator.swift in Sources */,
 				2965322E228756CD00A11052 /* ProgramViewModel.swift in Sources */,
+				2965323E228772C500A11052 /* ProgramFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

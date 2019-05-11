@@ -12,20 +12,25 @@ import Moya
 
 class AppCoordinator: Coordinator {
 
+    typealias Factory = ProgramFactory
+
     private var children: [Coordinator]
+
+    private let factory: Factory
 
     private let window: UIWindow
 
     private let rootViewController: UINavigationController
 
-    init(_ window: UIWindow) {
+    init(_ window: UIWindow, factory: Factory) {
         self.window = window
         children = []
         rootViewController = UINavigationController()
+        self.factory = factory
     }
 
     func start() {
-        let programCoordinator = ProgramCoordinator(rootViewController: rootViewController)
+        let programCoordinator = ProgramCoordinator(rootViewController: rootViewController, factory: factory)
         programCoordinator.start()
         window.rootViewController = rootViewController
         window.makeKeyAndVisible()
