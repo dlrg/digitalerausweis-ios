@@ -26,6 +26,7 @@
 		2965323422875BE100A11052 /* Program.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2965323322875BE100A11052 /* Program.storyboard */; };
 		2965323722875C2400A11052 /* ProgramListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2965323622875C2400A11052 /* ProgramListViewController.swift */; };
 		2965323922875F7400A11052 /* ProgramPointTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2965323822875F7400A11052 /* ProgramPointTableViewCell.swift */; };
+		2965323B2287718B00A11052 /* ProgramCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2965323A2287718B00A11052 /* ProgramCoordinator.swift */; };
 		821FA86EC7D7039C2BBAF2BC /* Pods_DLRG_sh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A8BE4F9C27026A25FC211 /* Pods_DLRG_sh.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		2965323322875BE100A11052 /* Program.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Program.storyboard; sourceTree = "<group>"; };
 		2965323622875C2400A11052 /* ProgramListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramListViewController.swift; sourceTree = "<group>"; };
 		2965323822875F7400A11052 /* ProgramPointTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramPointTableViewCell.swift; sourceTree = "<group>"; };
+		2965323A2287718B00A11052 /* ProgramCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramCoordinator.swift; sourceTree = "<group>"; };
 		5B30089D393B0CC763FD7CC5 /* Pods-DLRG.sh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLRG.sh.release.xcconfig"; path = "Target Support Files/Pods-DLRG.sh/Pods-DLRG.sh.release.xcconfig"; sourceTree = "<group>"; };
 		F84A8BE4F9C27026A25FC211 /* Pods_DLRG_sh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DLRG_sh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				2965323322875BE100A11052 /* Program.storyboard */,
+				2965323A2287718B00A11052 /* ProgramCoordinator.swift */,
 				2965323522875C1500A11052 /* View */,
 				2965322A228756B600A11052 /* ViewModel */,
 				296532242287561C00A11052 /* Model */,
@@ -379,6 +382,7 @@
 				2965322C228756C400A11052 /* ProgramPointViewModel.swift in Sources */,
 				296532262287569900A11052 /* ProgramPoint.swift in Sources */,
 				2965323722875C2400A11052 /* ProgramListViewController.swift in Sources */,
+				2965323B2287718B00A11052 /* ProgramCoordinator.swift in Sources */,
 				2965322E228756CD00A11052 /* ProgramViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

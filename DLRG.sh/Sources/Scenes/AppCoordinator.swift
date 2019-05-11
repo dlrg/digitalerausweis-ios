@@ -16,22 +16,23 @@ class AppCoordinator: Coordinator {
 
     private let window: UIWindow
 
-    private let viewController: ProgramListViewController
+    private let rootViewController: UINavigationController
 
     init(_ window: UIWindow) {
         self.window = window
         children = []
-        viewController = R.storyboard.program.instantiateInitialViewController()!
-        //viewController.coordinatorDelegate = self
-    } 
+        rootViewController = UINavigationController()
+    }
 
     func start() {
-        viewController.viewModel = ProgramViewModel(service: ProgramService(provider: MoyaProvider()))
-        window.rootViewController = viewController
+        let programCoordinator = ProgramCoordinator(rootViewController: rootViewController)
+        programCoordinator.start()
+        window.rootViewController = rootViewController
         window.makeKeyAndVisible()
     }
 
     func stop() {
+        children.forEach { $0.stop() }
     }
 }
 /*
