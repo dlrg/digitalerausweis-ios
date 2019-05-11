@@ -17,6 +17,7 @@
 		2965320522871D9F00A11052 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2965320422871D9F00A11052 /* Coordinator.swift */; };
 		2965320922871F1500A11052 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2965320822871F1500A11052 /* R.generated.swift */; };
 		2965320C228725B200A11052 /* Pass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2965320B228725B200A11052 /* Pass.swift */; };
+		296532112287356A00A11052 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 296532102287356A00A11052 /* PassKit.framework */; };
 		821FA86EC7D7039C2BBAF2BC /* Pods_DLRG_sh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A8BE4F9C27026A25FC211 /* Pods_DLRG_sh.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,8 @@
 		2965320422871D9F00A11052 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		2965320822871F1500A11052 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		2965320B228725B200A11052 /* Pass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pass.swift; sourceTree = "<group>"; };
+		296532102287356A00A11052 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		296532122287356A00A11052 /* DLRG.sh.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DLRG.sh.entitlements; sourceTree = "<group>"; };
 		5B30089D393B0CC763FD7CC5 /* Pods-DLRG.sh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLRG.sh.release.xcconfig"; path = "Target Support Files/Pods-DLRG.sh/Pods-DLRG.sh.release.xcconfig"; sourceTree = "<group>"; };
 		F84A8BE4F9C27026A25FC211 /* Pods_DLRG_sh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DLRG_sh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -43,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				296532112287356A00A11052 /* PassKit.framework in Frameworks */,
 				821FA86EC7D7039C2BBAF2BC /* Pods_DLRG_sh.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +76,7 @@
 		296531ED2286D90C00A11052 /* DLRG.sh */ = {
 			isa = PBXGroup;
 			children = (
+				296532122287356A00A11052 /* DLRG.sh.entitlements */,
 				2965320D2287265900A11052 /* Scenes */,
 				296531EE2286D90C00A11052 /* AppDelegate.swift */,
 				296531F52286D90F00A11052 /* Assets.xcassets */,
@@ -121,6 +126,7 @@
 		70CD9D9D5815126AABBEE9E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				296532102287356A00A11052 /* PassKit.framework */,
 				F84A8BE4F9C27026A25FC211 /* Pods_DLRG_sh.framework */,
 			);
 			name = Frameworks;
@@ -170,6 +176,11 @@
 				TargetAttributes = {
 					296531EA2286D90C00A11052 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Wallet = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -429,6 +440,7 @@
 			baseConfigurationReference = 160488376F4E59FC20A34171 /* Pods-DLRG.sh.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DLRG.sh/DLRG.sh.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SQH36C5KAU;
 				INFOPLIST_FILE = DLRG.sh/Info.plist;
@@ -448,6 +460,7 @@
 			baseConfigurationReference = 5B30089D393B0CC763FD7CC5 /* Pods-DLRG.sh.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DLRG.sh/DLRG.sh.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SQH36C5KAU;
 				INFOPLIST_FILE = DLRG.sh/Info.plist;
