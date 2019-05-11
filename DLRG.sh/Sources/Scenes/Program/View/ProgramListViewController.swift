@@ -57,6 +57,7 @@ extension ProgramListViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.programPointTableViewCell, for: indexPath)!
         let point = viewModel.points[indexPath.row]
         cell.name.text = point.name
+        cell.location.text = point.location
         cell.day.text = point.day
         return cell
     }
