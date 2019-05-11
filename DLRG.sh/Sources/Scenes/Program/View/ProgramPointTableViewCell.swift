@@ -10,5 +10,6 @@ import UIKit
 
 class ProgramPointTableViewCell: UITableViewCell {
     @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var location: UILabel!
     @IBOutlet weak var day: UILabel!
 }

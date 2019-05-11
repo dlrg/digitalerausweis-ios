@@ -29,17 +29,28 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9pE-oK-2Ma">
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gA6-X9-Eme">
                                                     <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ix-Dq-ZaT">
-                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="22"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROD-vW-QMg">
-                                                            <rect key="frame" x="0.0" y="22" width="374" height="21.5"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9pE-oK-2Ma">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="43.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flagfootball" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ix-Dq-ZaT">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="334" height="22"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sportplatz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUJ-44-emm">
+                                                                    <rect key="frame" x="0.0" y="22" width="334" height="21.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Tag 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROD-vW-QMg">
+                                                            <rect key="frame" x="334" y="0.0" width="40" height="43.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -48,15 +59,16 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="9pE-oK-2Ma" secondAttribute="trailing" id="CaQ-Lv-b9V"/>
-                                                <constraint firstAttribute="bottom" secondItem="9pE-oK-2Ma" secondAttribute="bottom" id="mZG-Hc-P1W"/>
-                                                <constraint firstItem="9pE-oK-2Ma" firstAttribute="leading" secondItem="2jP-cG-ID0" secondAttribute="leadingMargin" id="nSf-f5-aO0"/>
-                                                <constraint firstItem="9pE-oK-2Ma" firstAttribute="top" secondItem="2jP-cG-ID0" secondAttribute="top" id="npW-NT-hRP"/>
+                                                <constraint firstItem="gA6-X9-Eme" firstAttribute="leading" secondItem="2jP-cG-ID0" secondAttribute="leadingMargin" id="5Ff-72-86d"/>
+                                                <constraint firstAttribute="bottom" secondItem="gA6-X9-Eme" secondAttribute="bottom" id="GXy-5a-1Qj"/>
+                                                <constraint firstItem="gA6-X9-Eme" firstAttribute="top" secondItem="2jP-cG-ID0" secondAttribute="top" id="W2h-ju-bpA"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="gA6-X9-Eme" secondAttribute="trailing" id="pEk-am-UYF"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="day" destination="ROD-vW-QMg" id="t7h-uC-GeU"/>
-                                            <outlet property="name" destination="7Ix-Dq-ZaT" id="4iJ-hg-nOz"/>
+                                            <outlet property="day" destination="ROD-vW-QMg" id="5yn-eL-HHB"/>
+                                            <outlet property="location" destination="DUJ-44-emm" id="2zy-8R-2or"/>
+                                            <outlet property="name" destination="7Ix-Dq-ZaT" id="AZO-o7-Lqq"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
