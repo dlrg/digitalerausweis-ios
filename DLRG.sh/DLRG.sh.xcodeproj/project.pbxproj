@@ -101,9 +101,9 @@
 		296531ED2286D90C00A11052 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				296531EE2286D90C00A11052 /* AppDelegate.swift */,
 				2965323C228772B600A11052 /* Injectors */,
 				2965320D2287265900A11052 /* Scenes */,
-				296531EE2286D90C00A11052 /* AppDelegate.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
