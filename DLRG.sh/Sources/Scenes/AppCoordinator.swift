@@ -20,7 +20,7 @@ class AppCoordinator: Coordinator {
     init(_ window: UIWindow) {
         self.window = window
         children = []
-        viewController = R.storyboard.main.instantiateInitialViewController()!
+        viewController = R.storyboard.passScanner.instantiateInitialViewController()!
         viewController.coordinatorDelegate = self
     }
 

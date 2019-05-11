@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		296531EF2286D90C00A11052 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296531EE2286D90C00A11052 /* AppDelegate.swift */; };
 		296531F12286D90C00A11052 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296531F02286D90C00A11052 /* ViewController.swift */; };
-		296531F42286D90C00A11052 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 296531F22286D90C00A11052 /* Main.storyboard */; };
+		296531F42286D90C00A11052 /* PassScanner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 296531F22286D90C00A11052 /* PassScanner.storyboard */; };
 		296531F62286D90F00A11052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 296531F52286D90F00A11052 /* Assets.xcassets */; };
 		296531F92286D90F00A11052 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 296531F72286D90F00A11052 /* LaunchScreen.storyboard */; };
 		296532012287099500A11052 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296532002287099500A11052 /* ScannerViewController.swift */; };
@@ -26,7 +26,7 @@
 		296531EB2286D90C00A11052 /* DLRG.sh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DLRG.sh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		296531EE2286D90C00A11052 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		296531F02286D90C00A11052 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		296531F32286D90C00A11052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		296531F32286D90C00A11052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PassScanner.storyboard; sourceTree = "<group>"; };
 		296531F52286D90F00A11052 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		296531F82286D90F00A11052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		296531FA2286D90F00A11052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 		2965320A228724F900A11052 /* PassScanner */ = {
 			isa = PBXGroup;
 			children = (
-				296531F22286D90C00A11052 /* Main.storyboard */,
+				296531F22286D90C00A11052 /* PassScanner.storyboard */,
 				2965320F228726A500A11052 /* Model */,
 				2965320E2287266300A11052 /* ViewControllers */,
 			);
@@ -217,7 +217,7 @@
 			files = (
 				296531F92286D90F00A11052 /* LaunchScreen.storyboard in Resources */,
 				296531F62286D90F00A11052 /* Assets.xcassets in Resources */,
-				296531F42286D90C00A11052 /* Main.storyboard in Resources */,
+				296531F42286D90C00A11052 /* PassScanner.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,12 +308,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		296531F22286D90C00A11052 /* Main.storyboard */ = {
+		296531F22286D90C00A11052 /* PassScanner.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				296531F32286D90C00A11052 /* Base */,
 			);
-			name = Main.storyboard;
+			name = PassScanner.storyboard;
 			sourceTree = "<group>";
 		};
 		296531F72286D90F00A11052 /* LaunchScreen.storyboard */ = {
