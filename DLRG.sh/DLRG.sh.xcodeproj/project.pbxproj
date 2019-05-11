@@ -58,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				2965320822871F1500A11052 /* R.generated.swift */,
+				2965322022873EEC00A11052 /* Resources */,
 				296531ED2286D90C00A11052 /* Sources */,
 				296531EC2286D90C00A11052 /* Products */,
 				A26D79605D335AB10103B5B7 /* Pods */,
@@ -76,11 +77,8 @@
 		296531ED2286D90C00A11052 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				296532122287356A00A11052 /* DLRG.sh.entitlements */,
 				2965320D2287265900A11052 /* Scenes */,
 				296531EE2286D90C00A11052 /* AppDelegate.swift */,
-				296531F52286D90F00A11052 /* Assets.xcassets */,
-				296531FA2286D90F00A11052 /* Info.plist */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -121,6 +119,16 @@
 				2965320B228725B200A11052 /* Pass.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2965322022873EEC00A11052 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				296531F52286D90F00A11052 /* Assets.xcassets */,
+				296531FA2286D90F00A11052 /* Info.plist */,
+				296532122287356A00A11052 /* DLRG.sh.entitlements */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		70CD9D9D5815126AABBEE9E2 /* Frameworks */ = {
