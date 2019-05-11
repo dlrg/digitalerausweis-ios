@@ -10,11 +10,13 @@ import Foundation
 
 protocol ProgramPointType {
     var programmname: String { get }
+    var ort: String { get }
     var day: Int { get }
 }
 
 struct ProgramPoint: ProgramPointType {
     let programmname: String
+    let ort: String
     let day: Int
 }
 
