@@ -1,3 +1,20 @@
-PODFILE CHECKSUM: 0aa2077f9495b5234a5d56f37493a0beb631533b
+PODS:
+  - R.swift (5.0.2):
+    - R.swift.Library (~> 5.0.0)
+  - R.swift.Library (5.0.0)
+
+DEPENDENCIES:
+  - R.swift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - R.swift
+    - R.swift.Library
+
+SPEC CHECKSUMS:
+  R.swift: 81455d81467763cbd3f4d79d938d05f4ac4c0228
+  R.swift.Library: 0bf390e729bc10bb2c9e4fb78bd043164a7be4ff
+
+PODFILE CHECKSUM: 0d209b222c1515feee2d51a77ade239064885f63
 
 COCOAPODS: 1.6.1

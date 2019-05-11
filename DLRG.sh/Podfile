@@ -6,5 +6,6 @@ target 'DLRG.sh' do
 	use_frameworks!
 
 	# Pods for DLRG.sh
+	pod 'R.swift'
 
 end
